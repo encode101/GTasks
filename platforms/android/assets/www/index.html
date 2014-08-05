@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, "/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Google Tasks</title>
+<!-- Place this asynchronous JavaScript just before your </body> tag -->
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
+</head>
+<body>
+	<div id="front" data-role="page">
+		<div data-role="header">
+			<h1>GTasks</h1>
+		</div>
+		<div data-role="container">
+			<h1 style="text-align:center;" style="font-size:100%;">Hello!</h1>
+			<span id="signinButton" style="margin:0px auto; width: 112px; display: block; ">
+			  <span
+			    class="g-signin"
+			    data-callback="signinCallback"
+			    data-clientid="496099751340-jgi0h26rpeqva74h66a0igmp73mut462.apps.googleusercontent.com"
+			    data-cookiepolicy="single_host_origin"
+			    data-requestvisibleactions="http://schema.org/AddAction"
+			    data-scope="https://www.googleapis.com/auth/plus.login">
+			  </span>
+			</span>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Copyright 2014</h1>
+		</div>
+	</div>
+
+	<div id="home" data-role="page">
+		<div data-role="header">
+			<a href="#about" class="ui-mini">About</a>
+			<h1>RahulMishra</h1>
+			<a href="#login" class="ui-mini">Login</a>
+		</div>
+		<div data-role="container" class="wrapper">
+			<div class="align-center"><h1>Hi, <br/>My name is Rahul Mishra</h1></div>	
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Copyright 2014</h1>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<script src="js/fblogin.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
