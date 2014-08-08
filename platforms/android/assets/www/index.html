@@ -28,22 +28,22 @@
 <body>
 	<div id="front" data-role="page">
 		<div data-role="container">
+			 <input type="button" value="Get Tasks" id="getTasks">
+			  <div id="tasksList"></div>
 			<h1 style="text-align:center;" style="font-size:100%;">Manage all your google tasks seamlessly across all your devices</h1>
 			<span id="signinButton" style="margin:0px auto; width: 112px; display: block;">
 			  <span
 			    class="g-signin"
 			    data-callback="signinCallback"
-			    data-clientid="496099751340-pi7b594u4gc8bec6k570m4492a8bh95f.apps.googleusercontent.com"
+			    data-clientid="496099751340-jgi0h26rpeqva74h66a0igmp73mut462.apps.googleusercontent.com"
 			    data-cookiepolicy="single_host_origin"
 			    data-requestvisibleactions="http://schema.org/AddAction"
-			    data-scope="https://www.googleapis.com/auth/plus.login">
+			    data-scope="https://www.googleapis.com/auth/plus.login;https://www.googleapis.com/auth/tasks">
 			  </span>
-			  <a href="#home" data-rel="dialog"><img src="images/youtube.png" class="social-icon"></a>
 			</span>
 		</div>
-		<div data-role="footer" data-position="fixed">
-			
-		</div>
+		
+		<div data-role="footer" data-position="fixed"></div>
 	</div>
 
 	<div id="home" data-role="page">
@@ -60,7 +60,6 @@
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
-<script src="js/fblogin.js"></script>
 <script src="js/google-login.js"></script>
 <script src="js/script.js"></script>
 
