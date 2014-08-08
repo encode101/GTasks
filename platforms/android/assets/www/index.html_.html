@@ -5,7 +5,9 @@
 <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, "/>
 <meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<link rel="stylesheet" type="text/css" href="css/reveal.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Google Tasks</title>
 <!-- Place this asynchronous JavaScript just before your </body> tag -->
@@ -15,30 +17,21 @@
        po.src = 'https://apis.google.com/js/client:plusone.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
      })();
-
-     function signinCallback(authResult) {
-  if (authResult['status']['signed_in']) {
-    document.getElementById('signinButton').setAttribute('style', 'display: none');
-  } else {
-    console.log('Sign-in state: ' + authResult['error']);
-  }
-}
     </script>
 </head>
 <body>
 	<div id="front" data-role="page">
 		<div data-role="container">
 			<h1 style="text-align:center;" style="font-size:100%;">Manage all your google tasks seamlessly across all your devices</h1>
-			<span id="signinButton" style="margin:0px auto; width: 112px; display: block;">
+			<span id="signinButton" style="margin:0px auto; width: 112px; display: block; ">
 			  <span
 			    class="g-signin"
 			    data-callback="signinCallback"
-			    data-clientid="496099751340-pi7b594u4gc8bec6k570m4492a8bh95f.apps.googleusercontent.com"
+			    data-clientid="496099751340-jgi0h26rpeqva74h66a0igmp73mut462.apps.googleusercontent.com"
 			    data-cookiepolicy="single_host_origin"
 			    data-requestvisibleactions="http://schema.org/AddAction"
 			    data-scope="https://www.googleapis.com/auth/plus.login">
 			  </span>
-			  <a href="#home" data-rel="dialog"><img src="images/youtube.png" class="social-icon"></a>
 			</span>
 		</div>
 		<div data-role="footer" data-position="fixed">
@@ -48,21 +41,23 @@
 
 	<div id="home" data-role="page">
 		<div data-role="header">
-			<a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left" data-rel="back">Close</a>
-			<h1></h1>
+			<a href="#about" class="ui-mini">About</a>
+			<h1>RahulMishra</h1>
+			<a href="#login" class="ui-mini">Login</a>
 		</div>
 		<div data-role="container" class="wrapper">
-			<div class="align-center">
-				<img src="images/block-music.png" style="max-width:100%;" />
-			</div>	
+			<div class="align-center"><h1>Hi, <br/>My name is Rahul Mishra</h1></div>	
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Copyright 2014</h1>
 		</div>
 	</div>
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
 <script src="js/fblogin.js"></script>
-<script src="js/google-login.js"></script>
 <script src="js/script.js"></script>
+<script src="js/reveal.min.js"></script>
 
 </body>
 </html>
